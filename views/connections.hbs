@@ -7,14 +7,12 @@
             <thead>
                 <tr>
                     <th class="col-md-2 text-center">{{__ "Connection name"}}</th>
-                    <th class="col-md-4 text-center">{{__ "Connection string"}}</th>
                     <th class="col-md-3 text-center">{{__ "Connection options"}}</th>
                     <th class="col-md-4 text-center">{{__ "Action"}}</th>
                 </tr>
             </thead>
                 <tr class="connectionRow">
                     <td><input type="text" class="form-control input-sm conf_conn_name" value="{{@key}}"></td>
-                    <td><input type="text" class="form-control input-sm conf_conn_string" value="{{this.connection_string}}"></td>
                     <td><pre class="code-block conectionOptions"><code class="json">{{{toJSON this.connection_options}}}</code></pre></td>
                     <td class="text-center conn_id" id="{{@key}}">
                         <div class="btn-group" role="group" aria-label="ConnButtons">

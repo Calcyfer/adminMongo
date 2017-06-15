@@ -1,1 +1,12 @@
-{}
+{
+  "connections": {
+    "Production": {
+      "connection_string": "mongodb://heroku_lwfvfhrf:pab76vo9pl31q7ld4tagiqnvda@ds123662.mlab.com:23662/heroku_lwfvfhrf",
+      "connection_options": {
+        "poolSize": 10,
+        "autoReconnect": true,
+        "ssl": false
+      }
+    }
+  }
+}

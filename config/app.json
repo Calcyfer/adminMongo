@@ -1,1 +1,10 @@
-{}
+{
+  "app": {
+    "host": "0.0.0.0",
+    "port": 5000,
+    "docs_per_page": 15,
+    "password": "access!",
+    "locale": "en",
+    "monitoring": false
+  }
+}

@@ -78,16 +78,16 @@ router.post('/app/login_action', function (req, res, next){
 });
 
 // Show/manage connections
-router.get('/app/connection_list', function (req, res, next){
-    var connection_list = req.nconf.connections.get('connections');
-
-    res.render('connections', {
-        message: '',
-        editor: true,
-        connection_list: common.order_object(connection_list),
-        helpers: req.handlebars.helpers
-    });
-});
+// router.get('/app/connection_list', function (req, res, next){
+//     var connection_list = req.nconf.connections.get('connections');
+//
+//     res.render('connections', {
+//         message: '',
+//         editor: true,
+//         connection_list: common.order_object(connection_list),
+//         helpers: req.handlebars.helpers
+//     });
+// });
 
 // Show server monitoring
 router.get('/app/monitoring/:conn/', function (req, res, next){
